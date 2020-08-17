@@ -1,1 +1,7 @@
-console.log('hello')
+fetch('https://api.punkapi.com/v2/beers')
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+        console.log(data);
+    })
